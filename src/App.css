@@ -1,38 +1,63 @@
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(56, 56, 56);
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.reload {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 70px;
 }
 
-.App-link {
-  color: #61dafb;
+.ui.reload.button {
+  height: 40px;
+  width: 50px;
+  margin-left: 20px;
+  padding-left: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ui.reload.button:hover {
+  background-color: lightgray;
 }
+
+.header {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+
+h1:first-child {
+  margin-top: 80px;
+}
+
+.ui.add.button {
+  position: absolute;
+  width: 52px;
+  right: -2px;
+  bottom: 2px;
+}
+
+.ui.add.button:hover {
+  background-color: lightgray;
+}
+
+.ui.attached.button {
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  width: 30px;
+  padding: 10px 10px;
+}
+
+.ui.attached.button:hover {
+  background-color: rgb(211, 211, 211);
+}
+
+.content {
+  max-width: 150px;
+}
+
